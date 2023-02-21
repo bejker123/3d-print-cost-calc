@@ -1,16 +1,71 @@
-.App {
-  position: relative;
+:root{
+  --translate-x:-50%;
+  --translate-y:-60%;
+  --input-font-size:22px;
 }
 
-.board-row{
-
+body{
+  background-color: #23272f;
+  margin:0;
+  color: aliceblue;
+}
+.App{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(var(--translate-x), var(--translate-y));
+  transform: translate(var(--translate-x), var(--translate-y));
+  background-color: #343a46;
+  padding: 5% 10%;
+  border-radius: 20px;
+}
+.App h1{
+ 
+}
+.App input{
+  border: none;
+  background-color: aliceblue;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: var(--input-font-size);
 }
 
-.square{
-  width: 200px;
-  height: 200px;
-  border: black solid 1px;
-  margin: 1px 1px;
-  font-size: 100px;
+.inputs span{
+  font-size: var(--input-font-size);
+}
 
+.inputs #_3DPrintWeight{
+  width: 2.6ch;
+}
+
+.inputs #CostPerFilament{
+  width: 2.6ch;
+}
+
+.inputs #FilamentWeight{
+  width: 4.6ch;
+}
+
+.inputs #Wattage{
+  width: 3.6ch;
+}
+
+.inputs #costPerKWh{
+  width: 3.2ch;
+}
+
+.inputs #CostPerFilament{
+  width: 2.6ch;
+}
+
+.inputs #_3DPrintLength{
+  width: 1.6ch;
+}
+
+.inputs #CostPerFilamentLength{
+  width: 2.6ch;
+}
+
+.inputs #FilamentLength{
+  width: 3.6ch;
 }
